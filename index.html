@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login Form </title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+  <div class="main_div">
+    <div class="title">Login Form</div>
+   
+    <form action=''>
+      <div class="input_box">
+        <input type="text" placeholder="Email or Phone" required>
+        <div class="icon"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="Password" required>
+        <div class="icon"><i class="fas fa-lock"></i></div>
+      </div>
+      <div class="option_div">
+        
+        <div class="forget_div">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="input_box button">
+        <input type="submit" value="Login">
+      </div>
+      <div class="sign_up">
+        Not a member?<a href="sign.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+ <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+
+}
+body{
+  display: grid;
+    height: 100vh;
+    margin: 0; 
+    place-items: center;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-tmall-e-commerce-office-learning-stationery-simple-banner-image_258156.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+.main_div .title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 25px;
+}
+form .input_box{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+ 
+ 
+}
+.input_box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(10, 7, 7);
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.input_box input:focus{
+  border-color: #0f0f0f;
+}
+.input_box .icon{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: grey;
+}
+form .option_div{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.option_div .check_box{
+  display: flex;
+  align-items: center;
+}
+.option_div span{
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+.option_div .forget_div a{
+  font-size: 16px;
+  color: #32a9e0;
+}
+.button input{
+  padding-left: 0;
+  background:  #49c1a2;
+  color: rgb(19, 13, 13);
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.button input:hover{
+  background: #f8f6f8;
+}
+form .sign_up{
+  text-align: center;
+  margin-top: 25px;
+}
+.sign_up a{
+  color:  #49c1a2;
+}
+form a{
+  text-decoration: none;
+}
+form a:hover{
+  text-decoration: underline;
+}
+ </style> 
+ 
+</body>
+</html>
